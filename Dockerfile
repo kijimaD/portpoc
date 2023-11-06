@@ -2,7 +2,7 @@
 # builder #
 ###########
 
-FROM golang:1.21-buster AS builder
+FROM golang:1.21-bullseye AS builder
 RUN apt-get update \
     && apt-get install -y --no-install-recommends \
     upx-ucl
